@@ -1,0 +1,24 @@
+Proyecto:
+Casa de Desarrollo para el Politecnico Gran Colombiano
+
+Resumen:
+El Proyecto Casa de Desarrollo, nace con la finalidad de crear un ambiente de estudio con interacción real de los estudiantes a un entorno empresarial, el cual generará un ecosistema digital, que permita el desarrollo de software de calidad, en el que confluya la academia, la empresa y las necesidades sociales del entorno.
+Este proyecto tiene a su vez dos subProyectos que consta de: 
+-Construcción del modelo de nómina para la Casa de Desarrollo 
+-Creación de una plataforma Virtual(Web) que comunique a los estudiantes del Poli con la casa de desarrollo para que tengan la opción de usarlo como prácticas empresariales.
+
+
+
+Integrantes:
+NOMBRE				PARTICIPACION
+Nicolay Hilarión Villada	100 %
+Sebastián Canastero L.		100 %
+Henry Rodríguez G    		100 %
+
+
+Año: 2017
+Semestre: I
+Docente: Diego Oliveros
+Materia: Gerencia de Proyectos
+
+
