@@ -7,8 +7,8 @@
     <meta name="author" content="GeeksLabs">
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
     <link rel="shortcut icon" href="img/favicon.png">
-
-    <title>Nomina | Agregar Hoja de Vida</title>
+    
+    <title>Nomina | Memorando</title>
     
     <link href="css/bootstrap.min.css" rel="stylesheet">    
     <link href="css/bootstrap-theme.css" rel="stylesheet">   
@@ -26,7 +26,7 @@
       <header class="header dark-bg">
                 <!--logo inicio-->
             
-            <a href="index.html" class="logo"><img src="img/politecnico.png" alt="" class="logo" width="40" height="44"/><span class="lite">Nomina CS- Información del Empleado</span></a>
+            <a href="index.html" class="logo"><img src="img/politecnico.png" alt="" class="logo" width="40" height="44"/><span class="lite">Nomina CS- Gestión Memorando</span></a>
             <!--logo end-->
 
             <div class="nav search-row" id="top_menu">
@@ -96,20 +96,103 @@
           <section class="wrapper">
 		  <div class="row">
 				<div class="col-lg-12">
-					<h3 class="page-header"><i class="fa fa-user"></i>Agregar Hoja de Vida</h3>
+					<h3 class="page-header"><i class="fa fa-user"></i>Gestión de Memorandos</h3>
 					<ol class="breadcrumb">
 						<li><i class="fa fa-home"></i><a href="index.html">Inicio</a></li>
-						<li><i class="icon_document_alt"></i><a href="empleados_table.html">Hoja de Vida</a></li>
-						<li><i class="fa fa-files-o"></i>Ingresar Hoja de Vida</li>
+						<li><i class="icon_document_alt"></i><a href="#">Cartas</a></li>
+						<li><i class="fa fa-meh-o"></i>Memorandos</li>
 					</ol>
 				</div>
-			</div>
+			</div>              
+
+              <br>
+              <!-- page start-->
+            <div class="row">
+                  <div class="col-lg-12">
+                      <section class="panel">
+                          <header class="panel-heading h4">
+                           Listado de Memorandos
+                          </header>
+                          
+                          <table class="table table-striped table-advance table-hover">
+                           <tbody>
+                              <tr>
+                                 <th><i class="icon_profile"></i> Nombre</th>
+                                 <th><i class="icon_calendar"></i> Identificación</th>
+                                 <th><i class="icon_calendar"></i> Motivo</th>
+                                 <th><i class="icon_mail_alt"></i> Fecha</th>
+                                 <th><i class="icon_pin_alt"></i> Responsable</th>
+                                 <th><i class="icon_cogs"></i> Acción</th>
+                              </tr>
+                              <tr>
+                                 <td>Sebastian Canesteros</td>
+                                 <td>1011254454</td>
+                                 <td>Llegada tarde</td>
+                                 <td>2012/04/04</td>
+                                 <td>Director</td>
+                                 
+                                 <td>
+                                  <div class="btn-group">
+                                      <a class="btn btn-success" href="#" title="Editar"><i class="icon_check_alt2"></i></a>
+                                      <a class="btn btn-danger" href="#" title="Borrar"><i class="icon_close_alt2"></i></a>
+                                  </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                 <td>Henry Rodriguez Gamboa</td>
+                                 <td>12454545</td>
+                                 <td>Llegada tarde</td>
+                                <td>2016/04/07</td>
+                                <td>Director</td>
+                                  <td>
+                                  <div class="btn-group">
+                                      <a class="btn btn-success" href="#" title="Editar"><i class="icon_check_alt2"></i></a>
+                                      <a class="btn btn-danger" href="#" title="Borrar"><i class="icon_close_alt2"></i></a>
+                                  </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                 <td>Nicolay Hilarion</td>
+                                 <td>1310022457</td>
+                                 <td>Abandono de Actividades</td>
+                                 <td>2014/06/25</td>
+                                 <td>Director</td>
+                             
+                                 <td>
+                                  <div class="btn-group">
+                                     <a class="btn btn-success" href="#" title="Editar"><i class="icon_check_alt2"></i></a>
+                                      <a class="btn btn-danger" href="#" title="Borrar"><i class="icon_close_alt2"></i></a>
+                                  </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                 <td>Diego Oliveros</td>
+                                 <td>784221447</td>
+                                 <td>No porta el Uniforme</td>
+                                 <td>2016/09/14</td>                                 
+                                 <td>Director</td>
+                              
+                                 <td>
+                                  <div class="btn-group">
+                                      <a class="btn btn-success" href="#" title="Editar"><i class="icon_check_alt2"></i></a>
+                                      <a class="btn btn-danger" href="#" title="Borrar"><i class="icon_close_alt2"></i></a>
+                                  </div>
+                                  </td>
+                              </tr>
+
+                              
+                           </tbody>
+                        </table>
+                      </section>
+                  </div>
+              </div>
+              <br>
               <!-- Formulario -->              
               <div class="row">
                   <div class="col-lg-8">
                       <section class="panel">
                           <header class="panel-heading">
-                        Formulario Ingreso de Datos
+                        Formulario para Crear un Memorando
                           </header>
                           <div class="panel-body">
                               <div class="form">
@@ -126,51 +209,40 @@
                                               <input class=" form-control" id="identif" name="identif" type="number" />
                                           </div>
                                       </div>
-                                      <div class="form-group ">
-                                          <label for="tel" class="control-label col-lg-2">Teléfono<span class="required">*</span></label>
+                                    <div class="form-group ">
+                                          <label for="motiv" class="control-label col-lg-2">Motivo<span class="required">*</span></label>
                                           <div class="col-lg-10">
-                                              <input class="form-control " id="tel" name="tel" type="number" />
+                                              <input class=" form-control" id="motiv" name="motiv" type="text" />
                                           </div>
-                                      </div>
+                                      </div>                             
                                       <div class="form-group ">
-                                          <label for="ciudad" class="control-label col-lg-2">Ciudad<span class="required">*</span></label>
+                                          <label for="fecha" class="control-label col-lg-2">Fecha<span class="required">*</span></label>
                                           <div class="col-lg-10">
-                                              <input class="form-control " id="ciudad" name="ciudad" type="text" />
-                                          </div>
-                                      </div>
-                                      <div class="form-group ">
-                                          <label for="fecha-na" class="control-label col-lg-2">Fecha de Nacimiento<span class="required">*</span></label>
-                                          <div class="col-lg-10">
-                                              <input class="form-control " id="fecha-na" name="fecha-na" type="date" placeholder="AAA/MM/DD" />
+                                              <input class="form-control " id="fecha" name="fecha" type="date" placeholder="AAA/MM/DD" />
                                           </div>
                                       </div>
                                       <div class="form-group ">
-                                          <label for="email" class="control-label col-lg-2">Correo<span class="required">*</span></label>
+                                          <label for="resp" class="control-label col-lg-2">Responsable<span class="required">*</span></label>
                                           <div class="col-lg-10">
-                                              <input class="form-control " id="email" name="email" type="email" />
+                                              <input class="form-control " id="resp" name="resp" type="text" />
                                           </div>
                                       </div>
-                                 <div class="form-group">
-                                     <label for="estac" class="control-label col-lg-2" >Estado Civil<span class="required">*</span></label>
-                                     <div class="col-lg-10">
-                                     <select name="estac" id="estac" class="form-control">                        
-                                         <option disabled="disabled" selected="">Seleccione uno</option>
-                                         <option value="1">Casado</option>
-                                         <option value="2">Soltero</option>                                                 
-                                                     
-                                     </select>
-                                 </div> </div>
-                                  <div class="form-group ">
-                                          <label for="domic" class="control-label col-lg-2">Domicilio<span class="required">*</span></label>
+                                      <div class="form-group ">
+                                          <label for="obser" class="control-label col-lg-2">Observaciones<span class="required">*</span></label>
                                           <div class="col-lg-10">
-                                              <input class="form-control " id="domic" name="domic" type="text" />
+                                              <input class="form-control " id="obser" name="obser" type="text" />
                                           </div>
                                       </div>
-
+                                    <div class="form-group ">
+                                          <label for="enviarm" class="control-label col-lg-2 col-sm-3">Enviar al Empleado<span class="required">*</span></label>
+                                          <div class="col-lg-10 col-sm-9">
+                                              <input  type="checkbox" style="width: 20px" class="checkbox form-control" id="enviarm" name="enviarm" />
+                                          </div>
+                                      </div>
                                       <div class="form-group">
                                           <div class="col-lg-offset-2 col-lg-10">
                                               <button class="btn btn-primary" type="submit">Guardar</button>
-                                              <button class="btn btn-default" type="button">Cancelar</button>
+                                              <button class="btn btn-default" type="reset">Cancelar</button>
                                           </div>
                                       </div>
                                   </form>
