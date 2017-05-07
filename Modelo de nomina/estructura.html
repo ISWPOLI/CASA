@@ -46,11 +46,13 @@
         .organigrama * {
             margin: 0px;
             padding: 0px;
+            word-wrap: break-word;
         }
 
         .organigrama ul {
             padding-top: 20px;
             position: relative;
+            word-wrap: break-word;
         }
 
         .organigrama li {
@@ -59,6 +61,7 @@
             list-style-type: none;
             padding: 20px 5px 0px 5px;
             position: relative;
+            word-wrap: break-word;
         }
 
             .organigrama li::before, .organigrama li::after {
@@ -69,24 +72,29 @@
                 border-top: 1px solid #f80;
                 width: 50%;
                 height: 20px;
+                word-wrap: break-word;
             }
 
             .organigrama li::after {
                 right: auto;
                 left: 50%;
                 border-left: 1px solid #f80;
+                word-wrap: break-word;
             }
 
             .organigrama li:only-child::before, .organigrama li:only-child::after {
                 display: none;
+                word-wrap: break-word;
             }
 
             .organigrama li:only-child {
                 padding-top: 0;
+                word-wrap: break-word;
             }
 
             .organigrama li:first-child::before, .organigrama li:last-child::after {
                 border: 0 none;
+                word-wrap: break-word;
             }
 
             .organigrama li:last-child::before {
@@ -94,12 +102,14 @@
                 -webkit-border-radius: 0 5px 0 0;
                 -moz-border-radius: 0 5px 0 0;
                 border-radius: 0 5px 0 0;
+                word-wrap: break-word;
             }
 
             .organigrama li:first-child::after {
                 border-radius: 5px 0 0 0;
                 -webkit-border-radius: 5px 0 0 0;
                 -moz-border-radius: 5px 0 0 0;
+                word-wrap: break-word;
             }
 
         .organigrama ul ul::before {
@@ -110,14 +120,15 @@
             border-left: 1px solid #f80;
             width: 0;
             height: 20px;
+            word-wrap: break-word;
         }
 
         .organigrama li a {
             border: 1px solid #f80;
             padding: 1em 0.75em;
             text-decoration: none;
-            color: #333;
-            background-color: rgba(255,255,255,0.5);
+            color: white;
+            background-color: blue;
             font-family: arial, verdana, tahoma;
             font-size: 0.7em;
             display: inline-block;
@@ -127,22 +138,26 @@
             -webkit-transition: all 500ms;
             -moz-transition: all 500ms;
             transition: all 500ms;
+            word-wrap: break-word;
         }
 
             .organigrama li a:hover {
                 border: 1px solid #fff;
                 color: #ddd;
-                background-color: rgba(255,128,0,0.7);
+                background-color: cornflowerblue;
                 display: inline-block;
+                word-wrap: break-word;
             }
 
         .organigrama > ul > li > a {
             font-size: 1em;
             font-weight: bold;
+            word-wrap: break-word;
         }
 
         .organigrama > ul > li > ul > li > a {
             width: 8em;
+            word-wrap: break-word;
         }
     </style>
 
@@ -356,41 +371,55 @@
 
                         </div>
                     </div>
-                    <div class="box-content">
+                    <div>
+                        <div class="organigrama">
+                            <ul>
+                                <li>
 
-                        <div style="text-align: center; width:100%">
-                            <div class="organigrama">
-                                <ul>
-                                    <li>
-                                        <a href="#">Gerente</a>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Director general</a>
-                                                <ul>
-                                                    <li><a href="#">Arquitecto de Software</a></li>
-                                                    <li><a href="#">Departamento de desarrollo de software</a></li>
-                                                    <li>
-                                                        <a href="#">Departamento de Telecomunicaciones</a>
-                                                        <ul><li><a href="#">Soporte Tecnico</a></li></ul>
-                                                    </li>
-                                                    <li><a href="#">Recursos humanos</a></li>
-                                                    <li><a href="#">Departamento Finaciero</a></li>
-                                                </ul>
-                                            </li>
+                                    <a href="#" class="btn btn-small btn-success">Gerente</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="small btn-small btn-success">Director general</a>
+                                            <ul>
+                                                <li><a href="#" class="btn btn-small btn-success">Arquitecto de Software</a></li>
+                                                <li><a href="#" class="btn btn-small btn-success">Departamento de desarrollo de software</a></li>
+                                                <li>
+                                                    <a href="#" class="btn btn-small btn-success">Departamento de Telecomunicaciones</a>
+                                                    <ul>
+                                                        <li><a href="#" class="btn btn-small btn-success">Soporte Tecnico</a></li>
+                                                        <li><a href="#" class="btn btn-small btn-success">Departamento de comunicaciones</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#" class="btn btn-small btn-success">Recursos humanos</a></li>
+                                                <li><a href="#" class="btn btn-small btn-success">Departamento Finaciero</a></li>
+                                            </ul>
+                                        </li>
 
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
-                       
+                        <br />
+                        <br />
+                        <p>
+
+                            <button class="btn btn-large btn-primary">Listado de roles</button>
+                        </p>
+                        <p>
+                            <button class="btn btn-large btn-success">Agregar Rol</button>
+                        </p>
+                        <p>
+                            <button class="btn btn-large btn-danger">Eliminar Rol</button>
+
+                        </p>
 
 
-                       
 
 
+                        <hr>
 
                     </div>
+
                 </div>
             </div>
 
