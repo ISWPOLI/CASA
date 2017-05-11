@@ -118,7 +118,7 @@
 				</div>
 			</div>
               <br>
-              <form role="form" action="consultas.html">
+              <form role="form" action="consult_pend.html">
                   <div class="row">                
                       <div class="form-inline">
                           <div class="col-lg-4">
@@ -129,14 +129,14 @@
                                           <div class="form-group">                        
                                            <label for="fechana">Fecha Inicio<span class="required">*</span></label>
                                           <div class="">
-                                              <input class="form-control " id="datepicker" name="fechana" type="text" placeholder="AAA/MM/DD" />
+                                              <input class="form-control " id="datepicker" name="fechana" type="text" placeholder="DD/MM/AAA" />
                                           </div>
                                           </div>
 
                                           <div class="form-group">
-                                            <label for="fechana">Fecha Final<span class="required">*</span></label>
+                                            <label for="fecha-na">Fecha Final<span class="required">*</span></label>
                                           <div class="">
-                                              <input class="form-control " id="datepicker" name="fechana" type="text" placeholder="AAA/MM/DD" />
+                                              <input class="form-control" id="datepicker1" name="fecha-na" type="text" placeholder="DD/MM/AAA" />
                                           </div>                          
                                           
                                           </div>
@@ -144,7 +144,7 @@
                                   </div>
                               </div>
                           </div>
-                          <div class="col-lg-5">                   
+                          <div class="col-lg-6">                   
                               <div class="form-group">
                                   <label for="depart">Por Proyecto</label>                          
                                   <select class="form-control input-sm m-bot15">
@@ -244,7 +244,7 @@
   </section>
   <!-- container section end -->
   
-    <script src="js/jquery.js"></script>
+   <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-ui.js" type="text/javascript"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
@@ -257,8 +257,17 @@
             
     </script>
   <script>
-  $( function() {
-    $( "#datepicker" ).datepicker();
+  $( function() {    
+      $( "#datepicker" ).datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
+  } );
+  $( function() {    
+      $( "#datepicker1" ).datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
   } );
   </script>
 
