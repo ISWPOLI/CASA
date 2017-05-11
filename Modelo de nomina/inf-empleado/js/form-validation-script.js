@@ -1,7 +1,7 @@
 var Script = function () {
 
     $.validator.setDefaults({
-        submitHandler: function() { alert("submitted!"); }
+        submitHandler: function() { alert("Guardado!"); }
     });
 
     $().ready(function() {
@@ -15,7 +15,28 @@ var Script = function () {
                     required: true,
                     minlength: 6
                 },
+                 resp: {
+                    required: true,
+                    
+                },
+                 fechana: {
+                    required: true,
+                    
+                },
                 address: {
+                    required: true,
+                    minlength: 10
+                },
+                
+                tarea: {
+                    required: true,
+                    minlength: 10
+                },
+                asig: {
+                    required: true,
+                    
+                },
+                 identif: {
                     required: true,
                     minlength: 10
                 },
@@ -44,12 +65,32 @@ var Script = function () {
             },
             messages: {                
                 fullname: {
-                    required: "Please enter a Full Name.",
-                    minlength: "Your Full Name must consist of at least 6 characters long."
+                    required: "Por favor ingrese su nombre completo.",
+                    minlength: "El nombre debe tener como minimo 8 caracteres."
+                },
+                identif: {
+                    required: "Por favor ingrese su identificación.",
+                    minlength: "su identificacion no puede ser menos de 8 caracteres."
+                },
+                fechana: {
+                    required: "Ingrese una fecha",
+                 
+                },
+                resp: {
+                    required: "Escoga a un responsable de la tarea",
+                    
+                },
+                asig: {
+                    required: "Escoga quien asigno la tarea",
+                    
+                },
+                tarea: {
+                    required: "Debe dar una descripcion de la tarea",
+                    
                 },
                 address: {
-                    required: "Please enter a Address.",
-                    minlength: "Your Address must consist of at least 10 characters long."
+                    required: "Ingrese una direccion.",
+                    minlength: "Su dirección debe constar de al menos 10 caracteres."
                 },
                 username: {
                     required: "Please enter a Username.",
@@ -65,7 +106,7 @@ var Script = function () {
                     equalTo: "Please enter the same password as above."
                 },
                 email: "Please enter a valid email address.",
-                agree: "Please accept our terms & condition."
+                agree: "Por favor acepte los terminos y condiciones."
             }
         });
 
