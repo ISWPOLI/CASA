@@ -1,0 +1,68 @@
+ <style type="text/css">       
+        *{
+            padding: 0;
+            margin: 0;
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            box-sizing:border-box;
+        }
+        body{
+            background-image: url(../img/fondo.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .contenedor{
+            width: 100%;
+            max-width: 2000px;
+            margin: auto;
+        }
+        .contenedor p{
+            margin-bottom: 20px;
+        }
+        header nav{
+            background: #0060ae;
+            margin-bottom: 50px;
+        }
+        header nav ul{
+            list-style: none;
+            overflow: hidden;
+            display: block;
+        }
+        header nav ul li{
+            float: right;
+        }
+        header nav ul li a{
+            font-size: 10px;
+            display: block;
+            padding-top: 5px;
+            padding: 1px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+        }
+        header nav ul li a:hover{
+            background: #2980b9;
+            opacity: 0.9;
+        }
+        .menu-fixed{
+            width: 100%;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+        }
+        .footer{
+            background-image: url(../img/logo.png);
+            background-position: center;
+            background-repeat: no-repeat;;
+            background-color: #0060ae;
+            bottom: 0;
+            width: 100%;
+            color: #fff;
+            height: 55px;
+            border-radius: 4px;
+            position: fixed;
+        }
+</style>
