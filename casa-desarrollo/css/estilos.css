@@ -1,0 +1,76 @@
+
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body{
+                background-image: url(../img/imagen.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            form {
+
+                width: 400px;
+                margin: 50px 0px 0px 850px;
+            }
+            form h1{
+                text-align: center;
+                color: #142C6B;
+                font-weight: normal;
+                font-size: 40pt;
+                margin: 20px 0px;
+            }
+            form input{
+                width: 320px;
+                border-radius: 5px;
+                height: 25px;
+                padding: 0px 10px;
+                margin: 5px 30px;
+                color: #010357;
+                text-align: center;
+            }
+            form button{
+                width: 155px;
+                margin: 20px 0px 30px 30px;
+                height: 30px;
+                border: 0px solid #fff;
+                color: #fff;
+                background-color: #645D5D;
+                font-size: 10pt;
+                border-radius: 6px;
+                -moz-border-radius: 6px;
+                -webkit-border-radius: 6px;
+                opacity: 0.9;
+            }
+            form button:hover{
+                background: #7d7e7d;
+                background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%);
+                background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%);
+                background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );
+
+            }
+            form button:active {
+                background: #0e0e0e;
+                background: -moz-linear-gradient(top,  #0e0e0e 0%, #7d7e7d 100%);
+                background: -webkit-linear-gradient(top,  #0e0e0e 0%,#7d7e7d 100%);
+                background: linear-gradient(to bottom,  #0e0e0e 0%,#7d7e7d 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#7d7e7d',GradientType=0 );
+
+            }
+            form p{
+                margin: 0px;
+                padding: 0px;
+                font-size: 20pt;
+                text-align: center;
+                color: #fff;
+            }
+            form a{
+                color: #fff;
+                font-size: 10pt;
+            }
+            @media (max-width: 280px){
+                form {
+                    width: 100%
+                }
+            }

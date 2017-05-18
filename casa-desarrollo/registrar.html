@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>        
+        <meta charset="UTF-8">
+        <title>Registro</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        
+    </head>
+    <body>
+        <form method="post" onsubmit="return registrar();">
+            <h1>Registrarse</h1>
+            <div class="contenedor-inputs"> 
+                <input type="text" id="usuario" name="usuario" placeholder="Ingrese su Usuario" >
+                <input type="email" id="email" name="email" placeholder="Ingrese su correo" >
+                <input type="text" id="rol" name="rol" placeholder="Ingrese su Rol" >
+                <input type="password" id="clave" name="clave" placeholder="Ingrese su Contraseña" >
+                <button type="button"><a href="login.html">Cancelar</button></a>
+                <button type="submit" value="registrar">Registrarse</button>
+            </div>
+        </form>
+
+        <script src="js/iniciar.js"></script>
+    </body>
+</html>
